@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pi_bg"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPostProfileImage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPostContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/text_bg"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:text="@string/what_s_on_your_mind" />
+
+        <ImageView
+            android:id="@+id/ivAddPostImage"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/add_image" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#ccc" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp" />
+
+</LinearLayout>

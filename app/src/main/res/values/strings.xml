@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Hope</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="have_an_account_login">Have an account: Login</string>
+    <string name="select_image">Select Image</string>
+    <string name="what_s_on_your_mind">What\'s on your mind?</string>
+    <string name="todo">todo</string>
+    <string name="create_post">Create Post</string>
+    <string name="post">Post</string>
+    <string name="add_image">Add image</string>
+    <string name="remove">Remove</string>
+    <string name="confirm">Confirm</string>
+    <string name="username">UserName</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="write_a_comment">write a comment</string>
+    <string name="comment">Comment</string>
+</resources>

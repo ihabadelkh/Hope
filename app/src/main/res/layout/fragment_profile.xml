@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pi_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp">
+
+                    <ImageView
+                        android:id="@+id/ivProfileImage"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:contentDescription="@string/todo" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="Username"
+                    android:textSize="@dimen/_20sdp" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_bg_active"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="#ccc" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Posts" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProfileFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

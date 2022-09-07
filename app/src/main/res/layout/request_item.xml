@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pi_bg"
+        android:padding="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/btn_bg_active"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/btn_bg_not_active"
+                android:text="@string/remove"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

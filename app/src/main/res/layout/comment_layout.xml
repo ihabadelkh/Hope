@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvComments"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/comment_item"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:autofillHints="no"
+                style="@style/edtBackground"
+                android:hint="@string/write_a_comment"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/ivSend"
+                android:padding="@dimen/_3sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
