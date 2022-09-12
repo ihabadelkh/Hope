@@ -10,7 +10,6 @@ Facebook clone - cloning Facebook for learning purposes
 </p>
 
 # Dark Mode
-
 <p>
   <img src="https://user-images.githubusercontent.com/113052880/189619596-b7d12cc4-6ac5-40e5-addb-549454efe6a8.jpg" width="150">
   <img src="https://user-images.githubusercontent.com/113052880/189619699-05b990e9-d14d-48ed-8dfb-712f8db2c529.jpg" width="150">
